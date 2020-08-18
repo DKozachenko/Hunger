@@ -1,0 +1,77 @@
+.maintitle,
+.title,
+.subtitle
+  text-transform: uppercase
+  text-align: center
+
+.maintitle,  
+.title
+  position: relative
+
+  &::after
+    content: ''
+    display: block
+    width: 6rem
+    height: 0.5rem
+
+    position: absolute
+
+    bottom: -3.5rem
+    left: 50%
+    transform: translateX(-50%)
+
+    background: $yellow
+    border-radius: 1rem
+
+.maintitle 
+  +font('BB', 9.6rem, white)
+  
+  &::after
+    bottom: -3.5rem
+
+.title 
+  +font('BB', 3.6rem, white)
+  line-height: 4.8rem
+
+  &::after
+    bottom: -1.7rem
+
+  &.title_black
+    color: black
+
+.subtitle 
+  +font('Open Sans', 1.2rem, white)
+  font-weight: 700
+  line-height: 1.4rem
+  letter-spacing: .5em    
+
+.caption 
+  +font('Open Sans', 1.2rem, rgba(51, 51, 51, 0.5))
+  font-weight: 400
+  line-height: 1.2rem
+  text-align: center
+
+  span 
+    font-weight: 700  
+
+.button 
+  width: 50%
+
+  +font('Open Sans', 1.2rem, white)
+  font-weight: 700   
+  line-height: 2rem
+  text-transform: uppercase
+
+  background: $yellow
+  border-radius: .5rem
+  border: 1px solid $yellow
+  padding: 1.9rem
+
+  +tr
+
+  &:hover 
+    border-color: rgba(255, 255, 255, 0.5)
+    background: transparent
+
+
+
