@@ -16,6 +16,10 @@ html
   max-width: 128rem
   margin: 0 auto   
 
+section
+  &:not(.home)
+    padding: 10rem 0
+
 @media (max-width: 1280px) 
   .container 
     margin: 0
@@ -24,4 +28,6 @@ html
 @import "header" 
 @import "home" 
 @import "about" 
+@import "team" 
+@import "booking" 
 
