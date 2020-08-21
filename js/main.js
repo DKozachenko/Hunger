@@ -21,3 +21,9 @@ homeInnerDownbutton.addEventListener('click', () => {
     behavior: 'smooth'
   })
 })
+
+$('.special__inner-slider').slick({
+  infinite: true,
+  arrows: false,
+  dots: true
+});
