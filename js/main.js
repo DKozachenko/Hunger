@@ -82,3 +82,7 @@ $('.special__inner-slider').slick({
   arrows: false,
   dots: true
 });
+//jQuery masks for inputs
+$("#input__phone1").mask("+7 (999) 999-9999", { placeholder: " "});
+$("#input__phone2").mask("+7 (999) 999-9999", { placeholder: " "});
+$("#input__date").mask("99/99");
