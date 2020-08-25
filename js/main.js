@@ -10,7 +10,9 @@ const burger = document.querySelector('.burger'),
   
   header = document.querySelector('.header'),
   
-  navLinks = document.querySelectorAll('.nav__left-link, .nav__right-link');
+  navLinks = document.querySelectorAll('.nav__left-link, .nav__right-link'),
+  
+  inputPhones = document.querySelectorAll('.input__phone') ;
 //Burger
 burger.addEventListener('click', () => {
   burger.classList.toggle('burger_active');
@@ -82,3 +84,7 @@ $('.special__inner-slider').slick({
   arrows: false,
   dots: true
 });
+//jQuery masks for inputs
+$("#input__phone1").mask("+7 (999) 999-9999", { placeholder: " "});
+$("#input__phone2").mask("+7 (999) 999-9999", { placeholder: " "});
+$("#input__date").mask("99/99");
