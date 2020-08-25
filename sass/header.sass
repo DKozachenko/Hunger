@@ -7,6 +7,18 @@
 
   background: transparent  
 
+  &.header_fixed 
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 5
+
+    background: darken($yellow, 18%)
+
+    animation-name: header_opacity
+    animation-duration: .7s
+
   &__inner 
     position: relative
     padding: 4.1rem 0
@@ -51,6 +63,8 @@
           line-height: 1.8rem
           text-transform: uppercase
           text-decoration: none  
+
+          outline: none
 
           &:hover 
             text-decoration: underline
@@ -126,7 +140,13 @@
   from 
     transform: scaleY(0)
   to 
-    transform: scaleY(1)        
+    transform: scaleY(1)    
+
+@keyframes header_opacity
+  from 
+    opacity: 0
+  to 
+    opacity: 1        
 
 @media (max-width: 1140px) 
   .header__inner .nav 

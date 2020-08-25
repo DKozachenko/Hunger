@@ -34,6 +34,8 @@
 
           padding: 1.6rem 4rem
 
+          outline: none
+
           &:hover 
             text-decoration: underline
 
@@ -48,6 +50,10 @@
           .column__item 
             margin-bottom: 2.8rem
 
+            transform-origin: left
+
+            +tr
+
             &[data-menu-result="soupe"],
             &[data-menu-result="pasta"],
             &[data-menu-result="desert"],
@@ -56,6 +62,10 @@
             &[data-menu-result="drinks"]        
               display: none
 
+            &.column__item_active
+              animation-name: item_scale
+              animation-duration: 1s  
+
             &-title 
               +font('BB', 1.8rem, #333333)
               line-height: 1.8rem
@@ -63,6 +73,12 @@
             &-description 
               +font('BB', 1.2rem, rgba(51, 51, 51, 0.5))  
               line-height: 1.8rem
+
+@keyframes item_scale
+  from 
+    transform: scaleX(0)
+  to 
+    transform: scaleX(1)
 
 @media (max-width: 830px)
   .menu__inner-content .content__result

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header header_fixed">
     <div class="container">
       <div class="header__inner">
         <nav class="nav">
@@ -19,13 +19,13 @@
           </div>
 
           <div class="nav__left">
-            <a href="#" class="nav__left-link">Home</a>
+            <a href="#" class="nav__left-link" data-link="home">Home</a>
 
-            <a href="#" class="nav__left-link">About</a>
+            <a href="#" class="nav__left-link" data-link="about">About</a>
 
-            <a href="#" class="nav__left-link">Team</a>
+            <a href="#" class="nav__left-link" data-link="team">Team</a>
 
-            <a href="#" class="nav__left-link">Booking</a>
+            <a href="#" class="nav__left-link" data-link="booking">Booking</a>
           </div>
 
           <div class="header__inner-logo">
@@ -33,13 +33,13 @@
           </div>
 
           <div class="nav__right">
-            <a href="#" class="nav__right-link">Menu</a>
+            <a href="#" class="nav__right-link" data-link="menu">Menu</a>
 
-            <a href="#" class="nav__right-link">Galerie</a>
+            <a href="#" class="nav__right-link" data-link="gallery">Galerie</a>
 
-            <a href="#" class="nav__right-link">Events</a>
+            <a href="#" class="nav__right-link" data-link="events">Events</a>
 
-            <a href="#" class="nav__right-link">Contact</a>
+            <a href="#" class="nav__right-link" data-link="contacts">Contact</a>
           </div>
         </nav>
       </div>
@@ -54,9 +54,9 @@
         <h1 class="maintitle">Hunger</h1>
 
         <div class="home__inner-buttons">
-          <button class="button">Book table</button>
+          <button class="button" type="button">Book table</button>
 
-          <button class="button">Explore</button>
+          <button class="button" type="button">Explore</button>
         </div>
 
         <div class="home__inner-downbutton">
@@ -170,7 +170,7 @@
               </select>
             </div>
 
-            <button class="button">Book Now</button>
+            <button class="button" type="submit">Book Now</button>
           </form>
         </div>
 
@@ -695,7 +695,7 @@
             </div>
           </div>
 
-          <button class="button">Send message</button>
+          <button class="button" type="submit">Send message</button>
         </form>
       </div>
     </div>
