@@ -10,9 +10,7 @@ const burger = document.querySelector('.burger'),
   
   header = document.querySelector('.header'),
   
-  navLinks = document.querySelectorAll('.nav__left-link, .nav__right-link'),
-  
-  inputPhones = document.querySelectorAll('.input__phone') ;
+  navLinks = document.querySelectorAll('.nav__left-link, .nav__right-link');
 //Burger
 burger.addEventListener('click', () => {
   burger.classList.toggle('burger_active');
